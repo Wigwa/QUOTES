@@ -9,12 +9,12 @@ export class QuotesDetailComponent implements OnInit {
 
   @Input() quote:Quotes;
 
-  upvote(){
-    this.quote.like+=1;
-  }
-  downvote(){
-    this.quote.dislike+=1;
-  }
+  // upvote(){
+  //   this.quote.like+=1;
+  // }
+  // downvote(){
+  //   this.quote.dislike+=1;
+  // }
 
   constructor() { }
 
