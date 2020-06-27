@@ -18,6 +18,9 @@ export class QuoteComponent implements OnInit {
     new Quotes(6, 'Fact', 'they say dont let people words change you  but I say it depends if its positive take it and if its negative leave it.'),
     new Quotes(7, 'Fact', 'THe best competition is compiting with yourself and others.'),
   ]
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   constructor() { }
 
