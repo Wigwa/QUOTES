@@ -7,7 +7,14 @@ import { Quotes } from '../quotes';
 })
 export class QuotesDetailComponent implements OnInit {
 
-  @Input() quotes:Quotes;
+  @Input() quote:Quotes;
+
+  upvote(){
+    this.quote.like+=1;
+  }
+  downvote(){
+    this.quote.dislike+=1;
+  }
 
   constructor() { }
 
