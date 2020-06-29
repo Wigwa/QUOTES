@@ -16,10 +16,17 @@ export class QuoteComponent implements OnInit {
    new Quotes (4, 'Life', 'Dont dress for people appreciate you they might andup loving your looks rather than who you are so love yourself.'),
     new Quotes(5,'Reality', 'You only know the importance of someone once they have left you and of something once you have lost it so choose wisely.'),
     new Quotes(6, 'Fact', 'they say dont let people words change you  but I say it depends if its positive take it and if its negative leave it.'),
-    new Quotes(7, 'Fact', 'THe best competition is compiting with yourself and others.'),
+    new Quotes(7, 'Fact', 'THe best competition is compiting with yourself and others.',),
   ]
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+  upvote(){
+    this.quotes.likes+=1;
+  }
+  downvote(){
+    this.quotes.dislikes+=1;
   }
 
   constructor() { }

@@ -3,22 +3,15 @@ import { Quotes } from '../quotes';
 @Component({
   selector: 'app-quotes.detail',
   templateUrl: './quotes.detail.component.html',
-  styleUrls: ['./quotes.detail.component.css']
+  styleUrls: ['./quotes.detail.component.css'],
 })
 export class QuotesDetailComponent implements OnInit {
 
   @Input() quote:Quotes;
 
-  // upvote(){
-  //   this.quote.like+=1;
-  // }
-  // downvote(){
-  //   this.quote.dislike+=1;
-  // }
-
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

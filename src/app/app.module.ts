@@ -10,11 +10,11 @@ import { QuotesDetailComponent } from './quotes.detail/quotes.detail.component';
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuotesDetailComponent
+    QuotesDetailComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
