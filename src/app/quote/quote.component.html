@@ -2,16 +2,16 @@
 <hr>
 
 <ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{Quotes.name}}</li>
+  <div *ngFor='let quote for quotes;let i = index'>
+    <li>{{quotes.name}}</li>
     <button (click)='toggleDetails(i)'>Toggle Details</button>
     <app-goal-detail *ngIf='quotes.showDescription' [quotes]= 'quotes'></app-goal-detail>
   </div>
 
-<div><button>{{quote.like}}<i class="fa fa-thumbs-up"></i></button>
+<div><button>{{quotes.likes}}<i class="fa fa-thumbs-up"></i></button>
 
 </div>
-<div><button>{{quote.dislike}}<i class="fa fa-thumbs-down"></i> </button></div>
+<div><button>{{quotes.dislikes}}<i class="fa fa-thumbs-down"></i> </button></div>
 
 <button><i class="fa fa-trash-o"></i></button>
 

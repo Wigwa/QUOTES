@@ -9,6 +9,13 @@ export class QuotesDetailComponent implements OnInit {
 
   @Input() quote:Quotes;
 
+  upvote(){
+    this.quote.likes;
+  }
+  downvote(){
+    this.quote.dislikes;
+  }
+
   constructor() { }
 
   ngOnInit() {
