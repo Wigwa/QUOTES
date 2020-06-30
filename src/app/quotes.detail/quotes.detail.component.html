@@ -9,4 +9,6 @@
 
 <button><i class="fa fa-trash-o"></i></button>
 <p>{{quote.description}}</p> 
-<p> This quote was written on{{quotes.completeDate|dateCount}}</p>
+<p> This quote was written on:{{quotes.completeDate|dateCount}}</p>
+
+<button (clickj)= 'quotesDelete(true)'>Delete QUotes</button>

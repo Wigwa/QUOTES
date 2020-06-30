@@ -16,6 +16,10 @@ export class QuotesDetailComponent implements OnInit {
     this.quote.dislikes;
   }
 
+  quotesDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+
   constructor() { }
 
   ngOnInit() {
