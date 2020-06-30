@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quotes } from '../quotes';
 @Component({
   selector: 'app-quotes.detail',
@@ -8,6 +8,7 @@ import { Quotes } from '../quotes';
 export class QuotesDetailComponent implements OnInit {
 
   @Input() quote:Quotes;
+  @Output() isComplete = new EventEmitter<boolean>();
 
   upvote(){
     this.quote.likes;

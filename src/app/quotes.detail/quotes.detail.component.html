@@ -1,5 +1,5 @@
 <h4>
-    {{ quote.author}} Quoted:{{quote.dateQuoted|datePipe}}
+    {{ quote.author}} Quoted:{{quote.quotedDate|datePipe}}
 </h4>
 
 <div><button>{{quote.likes}}<i class="fa fa-thumbs-up"></i></button>
@@ -9,7 +9,7 @@
 
 <button><i class="fa fa-trash-o"></i></button>
 <p>{{quote.description}}</p> 
-<p> This quote was written on:{{quotes.completeDate|dateCount}}</p>
+<p> This quote was written on:{{quote.quotedDate|dateCount}}</p>
 
 <button (clickj)= 'quotesDelete(true)'
 class="btn btn-outline-danger"]>Delete quote</button>
