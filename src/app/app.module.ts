@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuoteComponent } from './quote/quote.component';
+import { QuotesComponent } from './quote/quote.component';
 import { QuotesDetailComponent } from './quotes.detail/quotes.detail.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
@@ -13,7 +13,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    QuoteComponent,
+    QuotesComponent,
     QuotesDetailComponent,
     StrikethroughDirective,
     DateCountPipe,

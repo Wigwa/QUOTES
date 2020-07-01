@@ -1,15 +1,6 @@
-<h4>
-    {{ quote.author}} Quoted:{{quote.quotedDate|datePipe}}
-</h4>
+<small>By:{{quote.author}}</small>
+<span id="up" ><i class="fas fa-thumbs-up fa-col m-2 text-success fa-1x" (click)='fnIncrease(true)'></i>{{quote.upvote}}</span>
+<span id="down" (click)=fnDecrease(true)><i class="fas fa-thumbs-down m-3 fa-1x"></i>{{quote.downvote}}</span>
+<span class="ml-2">{{quote.elapse|dateCount}}</span>
+<span id="delete" (click)= 'quoteDan(true)'><i class="far fa-trash-alt fa-2x text-danger float-right"></i></span>
 
-<div><button>{{quote.likes}}<i class="fa fa-thumbs-up"></i></button>
-
-</div>
-<div><button>{{quote.dislikes}}<i class="fa fa-thumbs-down"></i> </button></div>
-
-<button><i class="fa fa-trash-o"></i></button>
-<p>{{quote.description}}</p> 
-<p> This quote was written on:{{quote.quotedDate|dateCount}}</p>
-
-<button (clickj)= 'quotesDelete(true)'
-class="btn btn-outline-danger"]>Delete quote</button>
