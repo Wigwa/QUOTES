@@ -5,19 +5,19 @@ import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quote/quote.component';
-import { QuotesDetailComponent } from './quotes.detail/quotes.detail.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
-    QuotesDetailComponent,
     StrikethroughDirective,
     DateCountPipe,
     QuoteFormComponent,
+    QuoteDetailComponent,
   ],
   imports: [
     BrowserModule,

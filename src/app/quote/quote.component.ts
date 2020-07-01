@@ -9,14 +9,14 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes:Quotes[] = [
-    new Quotes ('Annett Mwangi','Jackson Smith', 'Give me coffee to change the things I can and wine to accept those that I cannot.', 0,0,new Date(1998,3,8)),
+    new Quotes ('Annett Mwangi','Jackson Smith', 'Give me coffee to change the things I can and wine to accept those that I cannot.', 0,0,new Date(2020,3,8)),
  
-    new Quotes ('Lucy Wigwa','Biron Johnson' ,'They think they know the rules so that they can break it forgetting that we are the one who wrote it.', 0,0, new Date(1999,2,28)),
+    new Quotes ('Lucy Wigwa','Biron Johnson' ,'They think they know the rules so that they can break it forgetting that we are the one who wrote it.', 0,0, new Date(2020,2,28)),
      new Quotes('Lilly Baraka','Rawlence Washington', 'Dont dress up so that they can see you,you might endup walking naked just to get their attention.', 0,0, new Date(2020,8,3)),
-    new Quotes ( 'Lovine Akinyi','Zoe Rainbow', 'Dont dress for people appreciate you they might andup loving your looks rather than who you are so love yourself.',0,0, new Date(2012,9,4)),
-     new Quotes('Rebecca Awino','Tom Hawland', 'You only know the importance of someone once they have left you and of something once you have lost it so choose wisely.',0,0, new Date(2017,8,1)),
-     new Quotes('Verah Auma','Jerich Rosales', 'they say dont let people words change you  but I say it depends if its positive take it and if its negative leave it.',0,0, new Date(2020,6,4)),
-     new Quotes('Nicole Wanjiku','Clark Kent', 'The best competition is compiting with yourself and others.',0,0, new Date(2020,9,8)),
+    //  new Quotes ( 'Lovine Akinyi','Zoe Rainbow', 'Dont dress for people appreciate you they might andup loving your looks rather than who you are so love yourself.',0,0, new Date(2020,9,4)),
+    //  new Quotes('Rebecca Awino','Tom Hawland', 'You only know the importance of someone once they have left you and of something once you have lost it so choose wisely.',0,0, new Date(2020,8,1)),
+    //  new Quotes('Verah Auma','Jerich Rosales', 'they say dont let people words change you  but I say it depends if its positive take it and if its negative leave it.',0,0, new Date(2020,6,4)),
+    // new Quotes('Nicole Wanjiku','Clark Kent', 'The best competition is compiting with yourself and others.',0,0, new Date(2020,9,8)),
    ];
   
   seeDetails(index) {

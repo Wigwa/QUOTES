@@ -4,3 +4,7 @@
 #up,#down{
     cursor: pointer;
 }
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
